@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>埼玉霊園 新プレート型永代供養墓・安堵 | 市の家ランディングページ</title>
+    <title>埼玉霊園 新プレート型永代供養墓 | 公式ランディングページ（株式会社宮口石材商店）</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Noto Sans JP & Playfair Display & Noto Serif JP -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
@@ -15,18 +15,23 @@
             theme: {
                 extend: {
                     colors: {
-                        brand: {
-                            gold: '#D4AF37',
-                            'gold-dark': '#B8860B',
-                            stone: '#F4F4F3',
-                            dark: '#1C201E',
-                            green: '#2D4B39',
-                            'green-light': '#6E8A78'
+                        autumn: {
+                            maple: '#9E2A2B',      // 深紅・もみじ
+                            'maple-dark': '#7A1C1D',
+                            amber: '#C85A17',      // 柿色・琥珀
+                            'amber-light': '#E07A38',
+                            ginkgo: '#D99B26',     // イチョウゴールド
+                            'ginkgo-light': '#F3C05C',
+                            chestnut: '#2E1C14',   // 渋栗・焦茶
+                            'chestnut-light': '#4A3225',
+                            cream: '#FAF6F0',      // 生成り・米色
+                            'cream-card': '#FFFDF9',
+                            sand: '#EFE8DC'        // 砂色
                         }
                     },
                     fontFamily: {
                         sans: ['Noto Sans JP', 'sans-serif'],
-                        serif: ['Playfair Display', 'Georgia', 'serif']
+                        serif: ['Noto Serif JP', 'Playfair Display', 'serif']
                     }
                 }
             }
@@ -35,147 +40,173 @@
     <style>
         body {
             font-family: 'Noto Sans JP', sans-serif;
-            background-color: #F7F7F6;
-            color: #1C201E;
+            background-color: #FAF6F0;
+            color: #2E1C14;
         }
         .text-serif-jp {
-            font-family: 'Playfair Display', 'Noto Sans JP', serif;
+            font-family: 'Noto Serif JP', 'Playfair Display', serif;
         }
         .hover-lift {
             transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
         }
         .hover-lift:hover {
             transform: translateY(-6px);
-            box-shadow: 0 20px 35px -15px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 20px 35px -15px rgba(158, 42, 43, 0.18);
         }
-        .text-shadow-custom {
-            text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+        .text-shadow-hero {
+            text-shadow: 0 2px 12px rgba(46, 28, 20, 0.85), 0 1px 3px rgba(0, 0, 0, 0.9);
+        }
+        .text-shadow-sub {
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+        }
+        /* 秋の和風グラデーションボーダー */
+        .autumn-gradient-border {
+            border-image: linear-gradient(135deg, #C85A17, #D99B26) 1;
         }
     </style>
 </head>
 <body class="antialiased leading-relaxed overflow-x-hidden">
 
     <!-- ヘッダー -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-autumn-sand shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-2.5 flex justify-between items-center">
             <div>
-                <span class="text-[10px] md:text-xs text-brand-green-light block tracking-widest font-bold">宗教・宗旨不問の永代供養墓</span>
-                <h1 class="text-base md:text-xl font-black tracking-wider text-brand-dark flex items-center gap-1.5">
-                    <span class="text-brand-gold text-lg">✦</span> 埼玉霊園 <span class="text-[10px] md:text-xs font-normal text-stone-500 bg-stone-100 px-2 py-0.5 rounded ml-1 md:ml-2">新プレート墓・安堵</span>
+                <div class="flex items-center gap-2">
+                    <span class="text-[10px] md:text-xs text-autumn-amber font-bold tracking-widest">宗教・宗旨不問の永代供養墓</span>
+                    <span class="hidden sm:inline-block text-[10px] bg-autumn-cream px-2 py-0.5 rounded text-autumn-chestnut font-medium border border-autumn-sand">販売・取扱い：株式会社宮口石材商店</span>
+                </div>
+                <h1 class="text-base md:text-xl font-black tracking-wider text-autumn-chestnut flex items-center gap-1.5 mt-0.5">
+                    <span class="text-autumn-amber text-lg">✦</span> 埼玉霊園 <span class="text-[10px] md:text-xs font-normal text-autumn-chestnut/70 bg-autumn-sand/60 px-2 py-0.5 rounded ml-1 md:ml-2">新・プレート墓</span>
                 </h1>
             </div>
-            <div class="hidden lg:flex items-center gap-6">
-                <a href="#features" class="text-sm font-semibold text-brand-dark hover:text-brand-gold transition">7つの特長</a>
-                <a href="#intro" class="text-sm font-semibold text-brand-dark hover:text-brand-gold transition">新スタイルの墓石</a>
-                <a href="#plans" class="text-sm font-semibold text-brand-dark hover:text-brand-gold transition">料金・プラン</a>
-                <a href="#about" class="text-sm font-semibold text-brand-dark hover:text-brand-gold transition">管理体制</a>
-                <a href="#access" class="text-sm font-semibold text-brand-dark hover:text-brand-gold transition">アクセス</a>
+            <div class="hidden lg:flex items-center gap-5">
+                <a href="#features" class="text-xs font-semibold text-autumn-chestnut hover:text-autumn-amber transition">7つの特長</a>
+                <a href="#intro" class="text-xs font-semibold text-autumn-chestnut hover:text-autumn-amber transition">新スタイルの墓石</a>
+                <a href="#plans" class="text-xs font-semibold text-autumn-chestnut hover:text-autumn-amber transition">料金・プラン</a>
+                <a href="#about" class="text-xs font-semibold text-autumn-chestnut hover:text-autumn-amber transition">管理体制</a>
+                <a href="#contact" class="text-xs font-semibold text-autumn-amber hover:text-autumn-maple transition flex items-center gap-1">
+                    <i data-lucide="mail" class="w-3.5 h-3.5"></i>Web予約・相談
+                </a>
+                <a href="#access" class="text-xs font-semibold text-autumn-chestnut hover:text-autumn-amber transition">アクセス</a>
             </div>
-            <div>
-                <a href="tel:0120-181-577" class="bg-brand-green hover:bg-brand-dark text-white px-3 md:px-5 py-2 rounded-full text-xs md:text-sm font-bold flex items-center gap-1.5 transition-all shadow-md">
-                    <i data-lucide="phone" class="w-4 h-4"></i>
-                    <span class="hidden sm:inline">来園相談はお気軽に</span> 0120-181-577
+            <div class="flex items-center gap-2">
+                <a href="tel:0120148114" class="bg-autumn-amber hover:bg-autumn-maple text-white px-3 md:px-4 py-2 rounded-full text-xs md:text-sm font-bold flex items-center gap-1.5 transition-all shadow-md">
+                    <i data-lucide="phone-call" class="w-4 h-4"></i>
+                    <div class="text-left leading-tight">
+                        <span class="hidden xl:block text-[9px] font-normal opacity-90">株式会社宮口石材商店</span>
+                        <span class="text-xs md:text-sm font-black tracking-wide">0120-148-114</span>
+                    </div>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- メインビジュアル (Hero Section) -->
-    <section class="relative min-h-[90vh] flex items-center justify-center bg-stone-900 text-white overflow-hidden py-20">
+    <!-- メインビジュアル (Hero Section) - 明るく見やすい背景に調整 -->
+    <section class="relative min-h-[88vh] flex items-center justify-center text-white overflow-hidden py-16 sm:py-20">
         <!-- 背景画像 (実際の霊園景観画像 DSC_268002.jpg をフルスクリーンに) -->
-        <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('DSC_268002.jpg');"></div>
-        <!-- グラデーションによる文字視認性向上 -->
-        <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-900/65 to-stone-950/45 z-0"></div>
+        <div class="absolute inset-0 z-0 bg-cover bg-center transition-all duration-700 brightness-110 contrast-[1.03]" style="background-image: url('DSC_268002.jpg');"></div>
+        
+        <!-- 明るさを遮らない、自然な光を演出する柔らかな秋色グラデーション -->
+        <div class="absolute inset-0 bg-gradient-to-t from-autumn-chestnut/85 via-autumn-chestnut/30 to-black/20 z-0"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-autumn-chestnut/40 via-transparent to-autumn-chestnut/30 z-0"></div>
 
         <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
             <!-- 現地案内会開催情報バッジ (来園誘導) -->
-            <div class="inline-flex flex-col sm:flex-row items-center gap-3 bg-white/95 backdrop-blur text-stone-900 px-6 py-3 rounded-2xl font-bold text-xs sm:text-sm mb-10 shadow-2xl border border-brand-gold animate-pulse">
-                <span class="bg-brand-gold text-white text-[10px] md:text-xs px-3 py-1 rounded-md tracking-widest font-black uppercase">現地案内会 開催中</span>
-                <span class="text-stone-800 font-extrabold flex items-center gap-1">
-                    <i data-lucide="calendar" class="w-4 h-4 text-brand-green"></i> 8月1日(土) ～ 8月16日(日) 9:00～17:00
+            <div class="inline-flex flex-col sm:flex-row items-center gap-2 sm:gap-3 bg-white/95 backdrop-blur-md text-autumn-chestnut px-5 py-2.5 rounded-2xl font-bold text-xs sm:text-sm mb-8 shadow-2xl border-2 border-autumn-ginkgo animate-pulse">
+                <span class="bg-autumn-amber text-white text-[10px] md:text-xs px-3 py-1 rounded-md tracking-widest font-black uppercase shadow-sm">現地案内会 開催中</span>
+                <span class="text-autumn-chestnut font-extrabold flex items-center gap-1.5">
+                    <i data-lucide="calendar" class="w-4 h-4 text-autumn-maple"></i> 9/5(土)～9/20(日) ・ 10/10(土)～10/25(日) 9:30～16:00
                 </span>
             </div>
 
             <!-- キャッチコピー -->
-            <p class="text-brand-gold text-xs sm:text-sm md:text-base tracking-[0.3em] font-extrabold mb-4 text-serif-jp text-shadow-custom">SAITAMA REIEN NEW PLATE STYLE</p>
-            <h2 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-wider mb-8 leading-tight text-serif-jp text-shadow-custom">
+            <p class="text-autumn-ginkgo-light text-xs sm:text-sm md:text-base tracking-[0.3em] font-extrabold mb-3 text-serif-jp text-shadow-sub uppercase">SAITAMA REIEN NEW PLATE STYLE</p>
+            <h2 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-wider mb-6 leading-tight text-serif-jp text-shadow-hero">
                 大切な人と、制約なく眠る。<br>
-                <span class="text-brand-gold">プレート型永代供養墓・安堵(あんど)</span>、誕生。
+                <span class="text-autumn-ginkgo-light drop-shadow-md">新・プレート型永代供養墓</span>、誕生。
             </h2>
             
-            <p class="text-sm sm:text-lg md:text-xl text-stone-200 max-w-3xl mx-auto mb-10 font-medium leading-relaxed text-shadow-custom">
+            <p class="text-sm sm:text-lg md:text-xl text-amber-50 max-w-3xl mx-auto mb-10 font-medium leading-relaxed text-shadow-sub">
                 国籍・宗教を問わず、ご家族・ご夫婦はもちろん、友人や大切なパートナー同士でも。<br>
                 粉骨せず、美しい「骨壺のまま」安らかに眠る、新しい供養のかたち。
             </p>
 
             <!-- 主なクイックベネフィット -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-3xl mx-auto mb-12 text-xs sm:text-sm">
-                <div class="bg-stone-900/80 backdrop-blur-md px-4 py-3.5 rounded-xl border border-brand-gold/40 shadow-lg">
-                    <span class="text-brand-gold font-extrabold block mb-1">宗教・宗旨不問</span>
-                    <span class="text-stone-300 text-[11px]">過去の宗派も不問</span>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-3xl mx-auto mb-10 text-xs sm:text-sm">
+                <div class="bg-autumn-chestnut/75 backdrop-blur-md px-4 py-3.5 rounded-xl border border-autumn-ginkgo/40 shadow-xl">
+                    <span class="text-autumn-ginkgo-light font-extrabold block mb-1">宗教・宗旨不問</span>
+                    <span class="text-stone-200 text-[11px]">過去の宗派も不問</span>
                 </div>
-                <div class="bg-stone-900/80 backdrop-blur-md px-4 py-3.5 rounded-xl border border-brand-gold/40 shadow-lg">
-                    <span class="text-brand-gold font-extrabold block mb-1">管理料永久無料</span>
-                    <span class="text-stone-300 text-[11px]">追加の負担一切なし</span>
+                <div class="bg-autumn-chestnut/75 backdrop-blur-md px-4 py-3.5 rounded-xl border border-autumn-ginkgo/40 shadow-xl">
+                    <span class="text-autumn-ginkgo-light font-extrabold block mb-1">管理料永久無料</span>
+                    <span class="text-stone-200 text-[11px]">追加の負担一切なし</span>
                 </div>
-                <div class="bg-stone-900/80 backdrop-blur-md px-4 py-3.5 rounded-xl border border-brand-gold/40 shadow-lg">
-                    <span class="text-brand-gold font-extrabold block mb-1">跡継ぎ不要</span>
-                    <span class="text-stone-300 text-[11px]">墓じまいも不要</span>
+                <div class="bg-autumn-chestnut/75 backdrop-blur-md px-4 py-3.5 rounded-xl border border-autumn-ginkgo/40 shadow-xl">
+                    <span class="text-autumn-ginkgo-light font-extrabold block mb-1">跡継ぎ不要</span>
+                    <span class="text-stone-200 text-[11px]">墓じまいも不要</span>
                 </div>
-                <div class="bg-stone-900/80 backdrop-blur-md px-4 py-3.5 rounded-xl border border-brand-gold/40 shadow-lg">
-                    <span class="text-brand-gold font-extrabold block mb-1">骨壺のまま安置</span>
-                    <span class="text-stone-300 text-[11px]">粉骨を行いません</span>
+                <div class="bg-autumn-chestnut/75 backdrop-blur-md px-4 py-3.5 rounded-xl border border-autumn-ginkgo/40 shadow-xl">
+                    <span class="text-autumn-ginkgo-light font-extrabold block mb-1">骨壺のまま安置</span>
+                    <span class="text-stone-200 text-[11px]">粉骨を行いません</span>
                 </div>
             </div>
 
             <!-- アクションボタン -->
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-lg mx-auto">
-                <a href="#plans" class="w-full bg-brand-gold hover:bg-brand-gold-dark text-stone-950 font-black px-8 py-5 rounded-full text-base sm:text-lg shadow-xl transition-all hover-lift flex items-center justify-center gap-2">
-                    <i data-lucide="eye" class="w-5 h-5"></i> 料金・区画プランを見る
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-xl mx-auto">
+                <a href="#plans" class="w-full sm:w-auto bg-gradient-to-r from-autumn-amber to-autumn-maple hover:from-autumn-maple hover:to-autumn-chestnut text-white font-black px-8 py-4.5 rounded-full text-base sm:text-lg shadow-2xl transition-all hover-lift flex items-center justify-center gap-2 border border-autumn-amber-light">
+                    <i data-lucide="eye" class="w-5 h-5 text-autumn-ginkgo-light"></i> 料金・区画プランを見る
                 </a>
-                <a href="#access" class="w-full bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white font-bold px-8 py-5 rounded-full text-base transition-all flex items-center justify-center gap-2">
-                    <i data-lucide="map-pin" class="w-5 h-5 text-brand-gold"></i> アクセスマップへ
+                <a href="#contact" class="w-full sm:w-auto bg-white/90 hover:bg-white text-autumn-chestnut font-black px-8 py-4.5 rounded-full text-base transition-all flex items-center justify-center gap-2 shadow-lg">
+                    <i data-lucide="mail" class="w-5 h-5 text-autumn-amber"></i> Webで見学予約・資料請求
                 </a>
+            </div>
+            
+            <!-- 取扱石材店情報バッジ -->
+            <div class="mt-8 pt-4 border-t border-white/20 inline-block">
+                <p class="text-xs text-amber-100/90 font-medium flex items-center justify-center gap-2">
+                    <span class="bg-autumn-chestnut/80 px-2.5 py-1 rounded border border-white/20 font-bold">販売指定会社</span>
+                    株式会社宮口石材商店 （フリーダイヤル：<a href="tel:0120148114" class="underline hover:text-autumn-ginkgo-light font-bold">0120-148-114</a>）
+                </p>
             </div>
         </div>
 
         <!-- 緩やかな装飾用の波形下ライン -->
-        <div class="absolute bottom-0 left-0 right-0 h-10 bg-stone-100" style="clip-path: ellipse(65% 100% at 50% 100%);"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-10 bg-autumn-cream" style="clip-path: ellipse(65% 100% at 50% 100%);"></div>
     </section>
 
     <!-- 実物・プレート墓の紹介セクション -->
-    <section id="intro" class="py-20 bg-stone-100">
+    <section id="intro" class="py-20 bg-autumn-cream">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <!-- 左側：解説 -->
                 <div class="lg:col-span-5">
-                    <span class="text-brand-gold font-extrabold tracking-widest text-xs uppercase block mb-2">NEW STYLE GRAVE</span>
-                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-wide text-brand-dark text-serif-jp mb-6 leading-snug">
+                    <span class="text-autumn-amber font-extrabold tracking-widest text-xs uppercase block mb-2">NEW STYLE GRAVE</span>
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-wide text-autumn-chestnut text-serif-jp mb-6 leading-snug">
                         気品ある赤御影石と<br class="hidden sm:inline">緑が調和する墓標。
                     </h3>
-                    <p class="text-stone-600 text-sm sm:text-base leading-relaxed mb-6 font-medium">
-                        当霊園に新たに整備されたプレート型永代供養墓・安堵は、美しい緑の芝生に映える上品な赤御影石を贅沢に採用しております。
+                    <p class="text-autumn-chestnut/80 text-sm sm:text-base leading-relaxed mb-6 font-medium">
+                        当霊園に新たに整備されたプレート型永代供養墓は、美しい緑の芝生に映える上品な赤御影石を贅沢に採用しております。
                     </p>
-                    <p class="text-stone-600 text-sm sm:text-base leading-relaxed mb-8">
+                    <p class="text-autumn-chestnut/80 text-sm sm:text-base leading-relaxed mb-8">
                         冷たい従来型のお墓のイメージを払拭する、日当たりが良く現代的で開放的なつくりが特徴です。墓標となる個別の銘板プレートには、お名前や思い出の言葉を美しく彫刻し、大切なご家族やご友人の歩みを未来へと残します。
                     </p>
-                    <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full bg-brand-gold/10 flex items-center justify-center text-brand-gold shrink-0">
+                    <div class="bg-autumn-cream-card p-5 rounded-2xl border border-autumn-sand shadow-sm flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-autumn-amber/10 flex items-center justify-center text-autumn-amber shrink-0">
                             <i data-lucide="sparkles" class="w-6 h-6"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-sm text-brand-dark">粉骨せず、そのままの美しいかたちで</h4>
-                            <p class="text-xs text-stone-500 mt-1">大切なご遺骨をパウダー状にすることなく、お骨壺のまま個別に末永くご安置いたします。</p>
+                            <h4 class="font-bold text-sm text-autumn-chestnut">粉骨せず、そのままの美しいかたちで</h4>
+                            <p class="text-xs text-autumn-chestnut/70 mt-1">大切なご遺骨をパウダー状にすることなく、お骨壺のまま個別に末永くご安置いたします。</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- 右側：実際のプレート墓写真 (DSC_266702.jpg) -->
+                <!-- 右側：実際のプレート墓写真 (DSC_266703.jpg) -->
                 <div class="lg:col-span-7">
                     <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                         <img src="DSC_266703.jpg" alt="埼玉霊園 プレート型永代供養墓の実物" class="w-full h-auto object-cover aspect-[4/3] hover:scale-105 transition duration-500">
-                        <div class="absolute bottom-4 right-4 bg-brand-dark/80 text-white text-[11px] px-3 py-1.5 rounded-full backdrop-blur">
-                            プレート型永代供養墓・安堵(あんど)
+                        <div class="absolute bottom-4 right-4 bg-autumn-chestnut/85 text-white text-[11px] px-3 py-1.5 rounded-full backdrop-blur border border-white/20">
+                            実際のプレート型永代供養墓の写真です
                         </div>
                     </div>
                 </div>
@@ -184,116 +215,116 @@
     </section>
 
     <!-- メリット訴求セクション (7つの特長) -->
-    <section id="features" class="py-20 bg-stone-50">
+    <section id="features" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
-                <span class="text-brand-gold font-bold tracking-widest text-xs uppercase block mb-2">7 KEY BENEFITS</span>
-                <h3 class="text-2xl sm:text-4xl font-extrabold tracking-wider text-brand-dark text-serif-jp">埼玉霊園の新プレート型永代供養墓が選ばれる「7つの特長」</h3>
-                <div class="w-12 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+                <span class="text-autumn-amber font-bold tracking-widest text-xs uppercase block mb-2">7 KEY BENEFITS</span>
+                <h3 class="text-2xl sm:text-4xl font-extrabold tracking-wider text-autumn-chestnut text-serif-jp">埼玉霊園の新プレート型永代供養墓が選ばれる「7つの特長」</h3>
+                <div class="w-16 h-1 bg-gradient-to-r from-autumn-amber to-autumn-ginkgo mx-auto mt-4 rounded-full"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- 特長1 -->
-                <div class="bg-white p-8 rounded-2xl border border-stone-200/60 shadow-sm hover-lift flex flex-col justify-between">
+                <div class="bg-autumn-cream-card p-8 rounded-2xl border border-autumn-sand shadow-sm hover-lift flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-brand-stone flex items-center justify-center mb-6 text-brand-green font-bold text-lg border border-stone-200">01</div>
-                        <h4 class="text-lg font-bold text-brand-dark mb-3 flex items-center gap-2">
-                            <span class="text-brand-gold">✦</span> 国籍・宗教・宗派不問
+                        <div class="w-12 h-12 rounded-full bg-autumn-sand/60 flex items-center justify-center mb-6 text-autumn-amber font-extrabold text-lg border border-autumn-sand">01</div>
+                        <h4 class="text-lg font-bold text-autumn-chestnut mb-3 flex items-center gap-2">
+                            <span class="text-autumn-amber">✦</span> 国籍・宗教・宗派不問
                         </h4>
-                        <p class="text-stone-600 text-sm leading-relaxed">
+                        <p class="text-autumn-chestnut/70 text-sm leading-relaxed">
                             過去の宗旨や、国籍は一切関係ございません。どのような宗派の方であっても、当霊園が心を込めて末永くお守りいたします。
                         </p>
                     </div>
                 </div>
 
                 <!-- 特長2 -->
-                <div class="bg-white p-8 rounded-2xl border border-stone-200/60 shadow-sm hover-lift flex flex-col justify-between">
+                <div class="bg-autumn-cream-card p-8 rounded-2xl border border-autumn-sand shadow-sm hover-lift flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-brand-stone flex items-center justify-center mb-6 text-brand-green font-bold text-lg border border-stone-200">02</div>
-                        <h4 class="text-lg font-bold text-brand-dark mb-3 flex items-center gap-2">
-                            <span class="text-brand-gold">✦</span> 管理料・寄付金一切不要
+                        <div class="w-12 h-12 rounded-full bg-autumn-sand/60 flex items-center justify-center mb-6 text-autumn-amber font-extrabold text-lg border border-autumn-sand">02</div>
+                        <h4 class="text-lg font-bold text-autumn-chestnut mb-3 flex items-center gap-2">
+                            <span class="text-autumn-amber">✦</span> 管理料・寄付金一切不要
                         </h4>
-                        <p class="text-stone-600 text-sm leading-relaxed">
+                        <p class="text-autumn-chestnut/70 text-sm leading-relaxed">
                             お墓の購入後は年間管理料や追加寄付金をいただくことはありません。後世の子供たちにお金の負担を残さない安心のシステムです。
                         </p>
                     </div>
                 </div>
 
                 <!-- 特長3 -->
-                <div class="bg-white p-8 rounded-2xl border border-stone-200/60 shadow-sm hover-lift flex flex-col justify-between">
+                <div class="bg-autumn-cream-card p-8 rounded-2xl border border-autumn-sand shadow-sm hover-lift flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-brand-stone flex items-center justify-center mb-6 text-brand-green font-bold text-lg border border-stone-200">03</div>
-                        <h4 class="text-lg font-bold text-brand-dark mb-3 flex items-center gap-2">
-                            <span class="text-brand-gold">✦</span> お墓の承継者不要
+                        <div class="w-12 h-12 rounded-full bg-autumn-sand/60 flex items-center justify-center mb-6 text-autumn-amber font-extrabold text-lg border border-autumn-sand">03</div>
+                        <h4 class="text-lg font-bold text-autumn-chestnut mb-3 flex items-center gap-2">
+                            <span class="text-autumn-amber">✦</span> お墓の承継者不要
                         </h4>
-                        <p class="text-stone-600 text-sm leading-relaxed">
+                        <p class="text-autumn-chestnut/70 text-sm leading-relaxed">
                             跡継ぎがいない方、一人暮らしの方でもお申込みいただけます。将来、無縁仏になったり、高額な「墓じまい」が発生する心配が一切ありません。
                         </p>
                     </div>
                 </div>
 
                 <!-- 特長4 (超重要) -->
-                <div class="bg-gradient-to-br from-white to-stone-100 p-8 rounded-2xl border-2 border-brand-gold shadow-md hover-lift flex flex-col justify-between relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-brand-gold text-stone-900 text-[10px] uppercase font-extrabold tracking-widest px-3 py-1 rounded-bl-lg">
+                <div class="bg-gradient-to-br from-white to-autumn-cream p-8 rounded-2xl border-2 border-autumn-amber shadow-md hover-lift flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-autumn-amber text-white text-[10px] uppercase font-extrabold tracking-widest px-3 py-1 rounded-bl-lg">
                         第一の魅力
                     </div>
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-brand-gold/10 flex items-center justify-center mb-6 text-brand-gold-dark font-extrabold text-lg border border-brand-gold/30">04</div>
-                        <h4 class="text-lg font-bold text-brand-dark mb-3 flex items-center gap-2">
-                            <span class="text-brand-gold">✦</span> 家族制限なし・パートナーも可
+                        <div class="w-12 h-12 rounded-full bg-autumn-amber/15 flex items-center justify-center mb-6 text-autumn-maple font-extrabold text-lg border border-autumn-amber/30">04</div>
+                        <h4 class="text-lg font-bold text-autumn-chestnut mb-3 flex items-center gap-2">
+                            <span class="text-autumn-amber">✦</span> 家族制限なし・パートナーも可
                         </h4>
-                        <p class="text-stone-700 text-sm leading-relaxed font-semibold">
+                        <p class="text-autumn-chestnut text-sm leading-relaxed font-semibold">
                             ご夫婦や血縁のみならず、籍を入れないパートナー同士、大切なご友人同士、事実婚のご夫婦など、制約なしに「大切な人と一緒に眠る」ことができます。
                         </p>
                     </div>
                 </div>
 
                 <!-- 特長5 -->
-                <div class="bg-gradient-to-br from-white to-stone-100 p-8 rounded-2xl border-2 border-brand-gold shadow-md hover-lift flex flex-col justify-between relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-brand-gold text-stone-900 text-[10px] uppercase font-extrabold tracking-widest px-3 py-1 rounded-bl-lg">
+                <div class="bg-gradient-to-br from-white to-autumn-cream p-8 rounded-2xl border-2 border-autumn-amber shadow-md hover-lift flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-autumn-amber text-white text-[10px] uppercase font-extrabold tracking-widest px-3 py-1 rounded-bl-lg">
                         絶対の安心
                     </div>
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-brand-gold/10 flex items-center justify-center mb-6 text-brand-gold-dark font-extrabold text-lg border border-brand-gold/30">05</div>
-                        <h4 class="text-lg font-bold text-brand-dark mb-3 flex items-center gap-2">
-                            <span class="text-brand-gold">✦</span> 粉骨せずお骨壺のまま安置
+                        <div class="w-12 h-12 rounded-full bg-autumn-amber/15 flex items-center justify-center mb-6 text-autumn-maple font-extrabold text-lg border border-autumn-amber/30">05</div>
+                        <h4 class="text-lg font-bold text-autumn-chestnut mb-3 flex items-center gap-2">
+                            <span class="text-autumn-amber">✦</span> 粉骨せずお骨壺のまま安置
                         </h4>
-                        <p class="text-stone-700 text-sm leading-relaxed font-semibold">
+                        <p class="text-autumn-chestnut text-sm leading-relaxed font-semibold">
                             一般の合祀墓では遺骨を砕く「粉骨」を行うケースが多い中、当プレート墓は大切なお体を骨壺に入れたまま安置いたします。お体を細かくされたくないご親族も安心です。
                         </p>
                     </div>
                 </div>
 
                 <!-- 特長6 -->
-                <div class="bg-white p-8 rounded-2xl border border-stone-200/60 shadow-sm hover-lift flex flex-col justify-between">
+                <div class="bg-autumn-cream-card p-8 rounded-2xl border border-autumn-sand shadow-sm hover-lift flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-full bg-brand-stone flex items-center justify-center mb-6 text-brand-green font-bold text-lg border border-stone-200">06</div>
-                        <h4 class="text-lg font-bold text-brand-dark mb-3 flex items-center gap-2">
-                            <span class="text-brand-gold">✦</span> 生前のお申込みに対応
+                        <div class="w-12 h-12 rounded-full bg-autumn-sand/60 flex items-center justify-center mb-6 text-autumn-amber font-extrabold text-lg border border-autumn-sand">06</div>
+                        <h4 class="text-lg font-bold text-autumn-chestnut mb-3 flex items-center gap-2">
+                            <span class="text-autumn-amber">✦</span> 生前のお申込みに対応
                         </h4>
-                        <p class="text-stone-600 text-sm leading-relaxed">
+                        <p class="text-autumn-chestnut/70 text-sm leading-relaxed">
                             お手元にご遺骨がない場合でも、ご自身の終活の一環として生前予約としてお申し込みいただけます。自分たちの安心を今から決めておくことができます。
                         </p>
                     </div>
                 </div>
 
                 <!-- 特長7 -->
-                <div class="bg-white p-8 rounded-2xl border border-stone-200/60 shadow-sm hover-lift lg:col-span-3 flex flex-col justify-between md:flex-row md:items-center gap-6">
+                <div class="bg-autumn-cream-card p-8 rounded-2xl border border-autumn-sand shadow-sm hover-lift lg:col-span-3 flex flex-col justify-between md:flex-row md:items-center gap-6">
                     <div class="md:flex-1">
-                        <div class="w-12 h-12 rounded-full bg-brand-stone flex items-center justify-center mb-4 text-brand-green font-bold text-lg border border-stone-200">07</div>
-                        <h4 class="text-xl font-bold text-brand-dark mb-3 flex items-center gap-2">
-                            <span class="text-brand-gold">✦</span> 信頼の永代管理付き
+                        <div class="w-12 h-12 rounded-full bg-autumn-sand/60 flex items-center justify-center mb-4 text-autumn-amber font-extrabold text-lg border border-autumn-sand">07</div>
+                        <h4 class="text-xl font-bold text-autumn-chestnut mb-3 flex items-center gap-2">
+                            <span class="text-autumn-amber">✦</span> 信頼の永代管理付き
                         </h4>
-                        <p class="text-stone-600 text-sm leading-relaxed">
+                        <p class="text-autumn-chestnut/70 text-sm leading-relaxed">
                             埼玉霊園を管轄・運営する由緒ある宗教法人「馬頭院」が責任を持って霊園全体の清掃・維持管理を行い、真心を込めたお守りと法要をお約束します。
                         </p>
                     </div>
-                    <div class="bg-brand-stone p-5 rounded-2xl border border-stone-200 md:w-80">
-                        <span class="text-xs text-brand-gold-dark font-extrabold tracking-widest block mb-1">MANAGEMENT</span>
-                        <p class="text-xs font-bold text-brand-dark flex items-center gap-1">
-                            <i data-lucide="landmark" class="w-4 h-4 text-brand-green"></i> 経営主体：宗教法人 馬頭院
+                    <div class="bg-autumn-cream p-5 rounded-2xl border border-autumn-sand md:w-80">
+                        <span class="text-xs text-autumn-amber font-extrabold tracking-widest block mb-1">MANAGEMENT</span>
+                        <p class="text-xs font-bold text-autumn-chestnut flex items-center gap-1">
+                            <i data-lucide="landmark" class="w-4 h-4 text-autumn-maple"></i> 経営主体：宗教法人 馬頭院
                         </p>
-                        <p class="text-[11px] text-stone-500 mt-2">
+                        <p class="text-[11px] text-autumn-chestnut/70 mt-2">
                             歴史に裏打ちされた盤石な運営体制により、お墓の未来が永遠に保証されます。
                         </p>
                     </div>
@@ -303,115 +334,115 @@
     </section>
 
     <!-- プラン・料金セクション (Plans) -->
-    <section id="plans" class="py-20 bg-stone-100">
+    <section id="plans" class="py-20 bg-autumn-cream">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
-                <span class="text-brand-gold font-bold tracking-widest text-xs uppercase block mb-2">PRICING & PLANS</span>
-                <h3 class="text-2xl sm:text-4xl font-extrabold tracking-wider text-brand-dark text-serif-jp">選べる2つのプレート墓プラン</h3>
-                <p class="text-stone-500 text-xs sm:text-sm mt-3">家族構成や将来の計画に合わせて、柔軟にお選びいただけます。</p>
-                <div class="w-12 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+                <span class="text-autumn-amber font-bold tracking-widest text-xs uppercase block mb-2">PRICING & PLANS</span>
+                <h3 class="text-2xl sm:text-4xl font-extrabold tracking-wider text-autumn-chestnut text-serif-jp">選べる2つのプレート墓プラン</h3>
+                <p class="text-autumn-chestnut/70 text-xs sm:text-sm mt-3">家族構成や将来の計画に合わせて、柔軟にお選びいただけます。</p>
+                <div class="w-16 h-1 bg-gradient-to-r from-autumn-amber to-autumn-ginkgo mx-auto mt-4 rounded-full"></div>
             </div>
 
             <!-- プランカード配置 -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 
                 <!-- 2人用：個人墓 -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-stone-200 flex flex-col justify-between hover-lift">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-autumn-sand flex flex-col justify-between hover-lift">
                     <div class="p-8 sm:p-10">
                         <div class="flex justify-between items-start mb-6">
                             <div>
-                                <span class="bg-stone-100 text-brand-green text-xs font-bold px-3 py-1 rounded-full border border-stone-200">ご夫婦・パートナー・ご友人と</span>
-                                <h4 class="text-2xl font-bold text-brand-dark mt-2 text-serif-jp">個人墓 2人用</h4>
+                                <span class="bg-autumn-cream text-autumn-amber text-xs font-bold px-3 py-1 rounded-full border border-autumn-sand">ご夫婦・パートナー・ご友人と</span>
+                                <h4 class="text-2xl font-bold text-autumn-chestnut mt-2 text-serif-jp">個人墓 2人用</h4>
                             </div>
-                            <span class="text-xs text-stone-400 bg-stone-100 px-2 py-1 rounded">骨壺2体安置可能</span>
+                            <span class="text-xs text-autumn-chestnut/60 bg-autumn-cream px-2 py-1 rounded">骨壺2体安置可能</span>
                         </div>
 
                         <!-- 実際の墓標に近いイメージ -->
-                        <div class="bg-stone-50 border border-stone-200/60 rounded-2xl p-6 mb-8 text-center">
-                            <div class="inline-block relative rounded-lg overflow-hidden border border-stone-300 shadow-inner max-w-full">
+                        <div class="bg-autumn-cream border border-autumn-sand rounded-2xl p-6 mb-8 text-center">
+                            <div class="inline-block relative rounded-lg overflow-hidden border border-autumn-sand shadow-inner max-w-full">
                                 <img src="DSC_2620.jpg" alt="プレート墓イメージ" class="h-32 object-cover aspect-[4/3]">
                                 <div class="absolute inset-0 bg-black/10"></div>
                             </div>
-                            <p class="text-xs text-stone-500 mt-3 max-w-[280px] mx-auto leading-relaxed">
+                            <p class="text-xs text-autumn-chestnut/70 mt-3 max-w-[280px] mx-auto leading-relaxed">
                                 清らかな芝生のなかに並ぶコンパクトで美しい彫刻プレート。寄り添って眠りたいお二人に最適です。
                             </p>
                         </div>
 
                         <!-- 価格表示 -->
-                        <div class="mb-8 border-t border-stone-100 pt-6">
-                            <p class="text-xs text-stone-500 font-medium">総額費用</p>
+                        <div class="mb-8 border-t border-autumn-sand/60 pt-6">
+                            <p class="text-xs text-autumn-chestnut/60 font-medium">総額費用（税込）</p>
                             <div class="flex items-baseline gap-1 mt-1">
-                                <span class="text-4xl md:text-5xl font-extrabold text-brand-dark tracking-tight">70</span>
-                                <span class="text-xl font-bold text-brand-dark">万円</span>
-                                <span class="text-xs text-stone-400 ml-2">　</span>
+                                <span class="text-4xl md:text-5xl font-extrabold text-autumn-chestnut tracking-tight">70</span>
+                                <span class="text-xl font-bold text-autumn-chestnut">万円</span>
+                                <span class="text-xs text-autumn-chestnut/60 ml-2">（税込）</span>
                             </div>
-                            <p class="text-[11px] text-stone-400 mt-2">※埋葬手数料・プレート彫刻料は別途頂戴いたします。</p>
+                            <p class="text-[11px] text-autumn-chestnut/60 mt-2">※埋葬手数料・プレート彫刻料は別途頂戴いたします。</p>
                         </div>
 
                         <!-- 含まれるものリスト -->
-                        <ul class="space-y-3 text-sm text-stone-600 border-t border-stone-100 pt-6">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> 永代供養墓 使用権利（期限なし）</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> 宗教法人による永代管理・合同供養</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> 年間管理料不要（ずっと追加料金ゼロ）</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> 粉骨せずに個別の骨壺で2体安置</li>
+                        <ul class="space-y-3 text-sm text-autumn-chestnut/80 border-t border-autumn-sand/60 pt-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-autumn-amber"></i> 永代供養墓 使用権利（期限なし）</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-autumn-amber"></i> 宗教法人による永代管理・合同供養</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-autumn-amber"></i> 年間管理料不要（ずっと追加料金ゼロ）</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-autumn-amber"></i> 粉骨せずに個別の骨壺で2体安置</li>
                         </ul>
                     </div>
 
-                    <div class="p-8 bg-stone-50 border-t border-stone-200/60">
-                        <a href="tel:0120-181-577" class="block w-full text-center bg-brand-green hover:bg-brand-dark text-white font-bold py-3.5 rounded-full transition text-sm">
-                            2人用の空き状況を電話で聞く
+                    <div class="p-8 bg-autumn-cream border-t border-autumn-sand/60">
+                        <a href="tel:0120148114" class="block w-full text-center bg-autumn-amber hover:bg-autumn-maple text-white font-bold py-3.5 rounded-full transition text-sm shadow">
+                            2人用の空き状況を宮口石材に聞く
                         </a>
                     </div>
                 </div>
 
                 <!-- 4人用：家族墓 -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border-2 border-brand-gold flex flex-col justify-between hover-lift relative">
-                    <div class="absolute top-0 right-0 bg-brand-gold text-stone-900 text-xs font-black px-6 py-2 rounded-bl-3xl tracking-widest shadow">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border-2 border-autumn-amber flex flex-col justify-between hover-lift relative">
+                    <div class="absolute top-0 right-0 bg-gradient-to-r from-autumn-amber to-autumn-maple text-white text-xs font-black px-6 py-2 rounded-bl-3xl tracking-widest shadow">
                         一番人気プラン
                     </div>
 
                     <div class="p-8 sm:p-10">
                         <div class="flex justify-between items-start mb-6">
                             <div>
-                                <span class="bg-brand-gold/10 text-brand-gold-dark text-xs font-bold px-3 py-1 rounded-full border border-brand-gold/30">ご家族や大切なグループで</span>
-                                <h4 class="text-2xl font-bold text-brand-dark mt-2 text-serif-jp">家族墓 4人用</h4>
+                                <span class="bg-autumn-amber/10 text-autumn-amber text-xs font-bold px-3 py-1 rounded-full border border-autumn-amber/30">ご家族や大切なグループで</span>
+                                <h4 class="text-2xl font-bold text-autumn-chestnut mt-2 text-serif-jp">家族墓 4人用</h4>
                             </div>
-                            <span class="text-xs text-stone-400 bg-brand-gold/10 px-2 py-1 rounded text-brand-gold-dark font-bold">骨壺4体安置可能</span>
+                            <span class="text-xs text-autumn-amber bg-autumn-amber/10 px-2 py-1 rounded font-bold">骨壺4体安置可能</span>
                         </div>
 
                         <!-- 実際の墓標に近いイメージ -->
-                        <div class="bg-stone-50 border border-stone-200/60 rounded-2xl p-6 mb-8 text-center">
-                            <div class="inline-block relative rounded-lg overflow-hidden border border-brand-gold/50 shadow-inner max-w-full">
+                        <div class="bg-autumn-cream border border-autumn-sand rounded-2xl p-6 mb-8 text-center">
+                            <div class="inline-block relative rounded-lg overflow-hidden border border-autumn-amber/50 shadow-inner max-w-full">
                                 <img src="DSC_2624.jpg" alt="プレート墓イメージ" class="h-32 object-cover aspect-[4/3] scale-110">
                                 <div class="absolute inset-0 bg-black/15"></div>
                             </div>
-                            <p class="text-xs text-stone-500 mt-3 max-w-[280px] mx-auto leading-relaxed">
+                            <p class="text-xs text-autumn-chestnut/70 mt-3 max-w-[280px] mx-auto leading-relaxed">
                                 大家族でも墓標をまとめて、一つのワイドプレートに。みんなが末永く繋がっていられる空間です。
                             </p>
                         </div>
 
                         <!-- 価格表示 -->
-                        <div class="mb-8 border-t border-stone-100 pt-6">
-                            <p class="text-xs text-stone-500 font-medium">総額費用</p>
+                        <div class="mb-8 border-t border-autumn-sand/60 pt-6">
+                            <p class="text-xs text-autumn-chestnut/60 font-medium">総額費用（税込）</p>
                             <div class="flex items-baseline gap-1 mt-1">
-                                <span class="text-4xl md:text-5xl font-extrabold text-brand-dark tracking-tight">98</span>
-                                <span class="text-xl font-bold text-brand-dark">万円</span>
-                                <span class="text-xs text-stone-400 ml-2">　</span>
+                                <span class="text-4xl md:text-5xl font-extrabold text-autumn-chestnut tracking-tight">98</span>
+                                <span class="text-xl font-bold text-autumn-chestnut">万円</span>
+                                <span class="text-xs text-autumn-chestnut/60 ml-2">（税込）</span>
                             </div>
-                            <p class="text-[11px] text-stone-400 mt-2">※埋葬手数料・プレート彫刻料は別途頂戴いたします。</p>
+                            <p class="text-[11px] text-autumn-chestnut/60 mt-2">※埋葬手数料・プレート彫刻料は別途頂戴いたします。</p>
                         </div>
 
                         <!-- 含まれるものリスト -->
-                        <ul class="space-y-3 text-sm text-stone-600 border-t border-stone-100 pt-6">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> 永代供養墓 使用権利（期限なし）</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> 宗教法人による永代管理・合同供養</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> 年間管理料不要（永代にわたり完全無料）</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> 粉骨せずに個別の骨壺で4体安置</li>
+                        <ul class="space-y-3 text-sm text-autumn-chestnut/80 border-t border-autumn-sand/60 pt-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-autumn-amber"></i> 永代供養墓 使用権利（期限なし）</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-autumn-amber"></i> 宗教法人による永代管理・合同供養</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-autumn-amber"></i> 年間管理料不要（永代にわたり完全無料）</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-autumn-amber"></i> 粉骨せずに個別の骨壺で4体安置</li>
                         </ul>
                     </div>
 
-                    <div class="p-8 bg-brand-stone border-t border-stone-200">
-                        <a href="tel:0120-181-577" class="block w-full text-center bg-brand-gold hover:bg-brand-gold-dark text-stone-950 font-black py-3.5 rounded-full transition text-sm shadow">
+                    <div class="p-8 bg-autumn-cream border-t border-autumn-sand">
+                        <a href="tel:0120148114" class="block w-full text-center bg-gradient-to-r from-autumn-amber to-autumn-maple hover:from-autumn-maple hover:to-autumn-chestnut text-white font-black py-3.5 rounded-full transition text-sm shadow-md">
                             4人用の詳細を電話で聞く
                         </a>
                     </div>
@@ -421,35 +452,35 @@
     </section>
 
     <!-- 写真ギャラリー (Gallery) -->
-    <section class="py-20 bg-stone-50">
+    <section class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
-                <span class="text-brand-gold font-bold tracking-widest text-xs uppercase block mb-2">CEMETERY VIEWS</span>
-                <h3 class="text-2xl sm:text-4xl font-extrabold tracking-wider text-brand-dark text-serif-jp">青空と自然につつまれる美しい霊園</h3>
-                <p class="text-stone-500 text-xs sm:text-sm mt-3">埼玉霊園の圧倒的なスケールと、整然とした安らぎのランドスケープをご覧ください。</p>
-                <div class="w-12 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+                <span class="text-autumn-amber font-bold tracking-widest text-xs uppercase block mb-2">CEMETERY VIEWS</span>
+                <h3 class="text-2xl sm:text-4xl font-extrabold tracking-wider text-autumn-chestnut text-serif-jp">青空と自然につつまれる美しい霊園</h3>
+                <p class="text-autumn-chestnut/70 text-xs sm:text-sm mt-3">埼玉霊園の圧倒的なスケールと、整然とした安らぎのランドスケープをご覧ください。</p>
+                <div class="w-16 h-1 bg-gradient-to-r from-autumn-amber to-autumn-ginkgo mx-auto mt-4 rounded-full"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- 霊園風景 1 (実際の空撮 DJI_032602.jpg) -->
-                <div class="group relative rounded-3xl overflow-hidden shadow-lg aspect-[16/11] bg-stone-200 border-2 border-stone-200">
+                <div class="group relative rounded-3xl overflow-hidden shadow-lg aspect-[16/11] bg-autumn-sand border-2 border-autumn-sand">
                     <img src="DJI_032602.jpg" alt="埼玉霊園の壮大な空撮全景" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-900/10 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-autumn-chestnut/80 via-autumn-chestnut/10 to-transparent"></div>
                     <div class="absolute bottom-6 left-6 right-6 text-white">
-                        <span class="bg-brand-gold text-stone-950 text-[10px] font-black px-2 py-0.5 rounded tracking-widest uppercase mb-2 inline-block">霊園全景</span>
+                        <span class="bg-autumn-amber text-white text-[10px] font-black px-2 py-0.5 rounded tracking-widest uppercase mb-2 inline-block">霊園全景</span>
                         <h4 class="text-lg md:text-xl font-bold tracking-wide">整然と整備された、陽射しが巡る大聖地</h4>
-                        <p class="text-xs text-stone-300 mt-1 font-light">どこからでも陽射しが届く抜群の日当たりと、徹底した清掃管理を維持しています。</p>
+                        <p class="text-xs text-amber-100 mt-1 font-light">どこからでも陽射しが届く抜群の日当たりと、徹底した清掃管理を維持しています。</p>
                     </div>
                 </div>
 
                 <!-- 霊園風景 2 (実際の景観 DSC_268002.jpg) -->
-                <div class="group relative rounded-3xl overflow-hidden shadow-lg aspect-[16/11] bg-stone-200 border-2 border-stone-200">
+                <div class="group relative rounded-3xl overflow-hidden shadow-lg aspect-[16/11] bg-autumn-sand border-2 border-autumn-sand">
                     <img src="DSC_268002.jpg" alt="埼玉霊園の陽当り良好な景観" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-900/10 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-autumn-chestnut/80 via-autumn-chestnut/10 to-transparent"></div>
                     <div class="absolute bottom-6 left-6 right-6 text-white">
-                        <span class="bg-brand-gold text-stone-950 text-[10px] font-black px-2 py-0.5 rounded tracking-widest uppercase mb-2 inline-block">開放的な景観</span>
+                        <span class="bg-autumn-amber text-white text-[10px] font-black px-2 py-0.5 rounded tracking-widest uppercase mb-2 inline-block">開放的な景観</span>
                         <h4 class="text-lg md:text-xl font-bold tracking-wide">空が広く心地よい風が吹き抜ける空間</h4>
-                        <p class="text-xs text-stone-300 mt-1 font-light">お墓参りにいらっしゃるご家族にとっても、いつでも居心地の良い、憩いの場所です。</p>
+                        <p class="text-xs text-amber-100 mt-1 font-light">お墓参りにいらっしゃるご家族にとっても、いつでも居心地の良い、憩いの場所です。</p>
                     </div>
                 </div>
             </div>
@@ -457,47 +488,47 @@
     </section>
 
     <!-- 永代供養について＆案内所の安心 -->
-    <section id="about" class="py-20 bg-stone-900 text-stone-100">
+    <section id="about" class="py-20 bg-autumn-chestnut text-autumn-cream">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
-                <span class="text-brand-gold font-bold tracking-widest text-xs uppercase block mb-2">ABOUT MANAGEMENT</span>
+                <span class="text-autumn-ginkgo-light font-bold tracking-widest text-xs uppercase block mb-2">ABOUT MANAGEMENT</span>
                 <h3 class="text-2xl sm:text-4xl font-extrabold tracking-wider text-serif-jp">永代供養を支える「確かな管理体制」</h3>
-                <div class="w-12 h-1 bg-brand-gold mx-auto mt-4 mb-12 rounded-full"></div>
+                <div class="w-16 h-1 bg-autumn-amber mx-auto mt-4 mb-12 rounded-full"></div>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-5xl mx-auto">
                 <!-- 左側：信頼の管理事務所 (実際の写真 P104007102.jpg) -->
                 <div class="lg:col-span-6">
-                    <div class="rounded-3xl overflow-hidden border-4 border-stone-800 shadow-2xl relative">
+                    <div class="rounded-3xl overflow-hidden border-4 border-autumn-chestnut-light shadow-2xl relative">
                         <img src="P104007102.jpg" alt="埼玉霊園 管理事務所" class="w-full h-auto object-cover aspect-[4/3]">
-                        <div class="absolute top-4 left-4 bg-brand-green text-white text-[11px] px-3 py-1.5 rounded-full font-bold">
+                        <div class="absolute top-4 left-4 bg-autumn-amber text-white text-[11px] px-3 py-1.5 rounded-full font-bold">
                             管理事務所・現地受付
                         </div>
                     </div>
                 </div>
 
                 <!-- 右側：お約束内容 -->
-                <div class="lg:col-span-6 bg-stone-800/80 p-8 rounded-3xl border border-stone-800 flex flex-col justify-between h-full">
+                <div class="lg:col-span-6 bg-autumn-chestnut-light/90 p-8 rounded-3xl border border-white/10 flex flex-col justify-between h-full">
                     <div>
                         <h4 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                            <span class="text-brand-gold">✦</span> 管理事務所が年中無休で稼働
+                            <span class="text-autumn-ginkgo-light">✦</span> 管理事務所が年中無休で稼働
                         </h4>
-                        <p class="text-stone-300 text-sm leading-relaxed mb-6 font-light">
+                        <p class="text-amber-100/90 text-sm leading-relaxed mb-6 font-light">
                             埼玉霊園には、安心してお参りいただけるように立派な管理棟・事務所を完備。専門の常駐スタッフが、園内の美化やお墓の管理を年中無休で行っております。
                         </p>
-                        <p class="text-stone-300 text-sm leading-relaxed mb-6 font-light">
+                        <p class="text-amber-100/90 text-sm leading-relaxed mb-6 font-light">
                             管理運営は「宗教法人 馬頭院」が執り行っており、未来永劫にわたり安心してお墓を守り続ける体制を構築しています。
                         </p>
                     </div>
                     
-                    <div class="grid grid-cols-2 gap-4 pt-6 border-t border-stone-700">
+                    <div class="grid grid-cols-2 gap-4 pt-6 border-t border-white/10">
                         <div>
-                            <span class="text-brand-gold font-bold text-xs block mb-1">■ 供養体制</span>
-                            <p class="text-[11px] text-stone-400">祥月命日、お彼岸、お盆など定期的な合同法要を手厚く実施。</p>
+                            <span class="text-autumn-ginkgo-light font-bold text-xs block mb-1">■ 供養体制</span>
+                            <p class="text-[11px] text-stone-300">祥月命日、お彼岸、お盆など定期的な合同法要を手厚く実施。</p>
                         </div>
                         <div>
-                            <span class="text-brand-gold font-bold text-xs block mb-1">■ 手続きサポート</span>
-                            <p class="text-[11px] text-stone-400">生前予約から納骨手続き、複雑な改葬手続きまで、一貫してご相談可能。</p>
+                            <span class="text-autumn-ginkgo-light font-bold text-xs block mb-1">■ 手続きサポート</span>
+                            <p class="text-[11px] text-stone-300">生前予約から納骨手続き、複雑な改葬手続きまで、一貫してご相談可能。</p>
                         </div>
                     </div>
                 </div>
@@ -506,23 +537,23 @@
     </section>
 
     <!-- 改葬・お墓引っ越しをご検討中の方へ -->
-    <section class="py-20 bg-stone-100">
+    <section class="py-20 bg-autumn-cream">
         <div class="max-w-4xl mx-auto px-4">
-            <div class="bg-white rounded-3xl p-8 sm:p-12 border border-stone-200 shadow-md flex flex-col md:flex-row items-center gap-8">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 border border-autumn-sand shadow-md flex flex-col md:flex-row items-center gap-8">
                 <div class="md:w-1/3 text-center md:text-left">
-                    <span class="text-brand-gold font-bold tracking-widest text-[10px] uppercase block mb-1">RELOCATION SUPPORT</span>
-                    <h4 class="text-2xl font-bold text-brand-dark text-serif-jp">改葬（お墓の引っ越し）<br>でお悩みの方へ</h4>
-                    <p class="text-stone-500 text-xs mt-3 leading-relaxed">
+                    <span class="text-autumn-amber font-bold tracking-widest text-[10px] uppercase block mb-1">RELOCATION SUPPORT</span>
+                    <h4 class="text-2xl font-bold text-autumn-chestnut text-serif-jp">改葬（お墓の引っ越し）<br>でお悩みの方へ</h4>
+                    <p class="text-autumn-chestnut/60 text-xs mt-3 leading-relaxed">
                         「遠方の実家のお墓参りが困難」「管理が負担になっている」など、お気軽にご相談ください。
                     </p>
                 </div>
-                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-stone-200 pt-6 md:pt-0 md:pl-8">
-                    <p class="text-sm text-stone-600 leading-relaxed mb-4">
-                        ご実家の先祖代々のお墓を「墓じまい」し、アクセス便利な埼玉霊園へお骨を移動する（改葬）手続きをスムーズに行えるよう、役所への申請書類のアドバイスや手順を、現地スタッフが懇切丁寧にサポートいたします。
+                <div class="md:w-2/3 border-t md:border-t-0 md:border-l border-autumn-sand pt-6 md:pt-0 md:pl-8">
+                    <p class="text-sm text-autumn-chestnut/80 leading-relaxed mb-4">
+                        ご実家の先祖代々のお墓を「墓じまい」し、アクセス便利な埼玉霊園へお骨を移動する（改葬）手続きをスムーズに行えるよう、役所への申請書類のアドバイスや手順を、現地スタッフ並びに株式会社宮口石材商店が懇切丁寧にサポートいたします。
                     </p>
-                    <ul class="space-y-2 text-xs text-stone-500 font-bold">
-                        <li class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-gold"></i> 墓じまいの業者のご紹介や概算見積り相談</li>
-                        <li class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-gold"></i> 他県からの遺骨移動に必要な「改葬許可申請」のご案内</li>
+                    <ul class="space-y-2 text-xs text-autumn-chestnut/80 font-bold">
+                        <li class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-autumn-amber"></i> 墓じまいの業者のご紹介や概算見積り相談</li>
+                        <li class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-autumn-amber"></i> 他県からの遺骨移動に必要な「改葬許可申請」のご案内</li>
                     </ul>
                 </div>
             </div>
@@ -530,87 +561,87 @@
     </section>
 
     <!-- よくある質問 (FAQ) -->
-    <section class="py-20 bg-stone-50">
+    <section class="py-20 bg-white">
         <div class="max-w-3xl mx-auto px-4">
             <div class="text-center mb-16">
-                <span class="text-brand-gold font-bold tracking-widest text-xs uppercase block mb-2">FAQ</span>
-                <h3 class="text-2xl md:text-4xl font-bold tracking-wider text-brand-dark text-serif-jp">よくあるご質問</h3>
-                <div class="w-12 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+                <span class="text-autumn-amber font-bold tracking-widest text-xs uppercase block mb-2">FAQ</span>
+                <h3 class="text-2xl md:text-4xl font-bold tracking-wider text-autumn-chestnut text-serif-jp">よくあるご質問</h3>
+                <div class="w-16 h-1 bg-gradient-to-r from-autumn-amber to-autumn-ginkgo mx-auto mt-4 rounded-full"></div>
             </div>
 
             <!-- アコーディオンFAQ -->
             <div class="space-y-4">
                 <!-- Q1 -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+                <div class="bg-autumn-cream-card rounded-2xl border border-autumn-sand overflow-hidden shadow-sm">
                     <button class="w-full text-left p-6 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
-                        <span class="font-bold text-sm md:text-base text-brand-dark flex items-center gap-2">
-                            <span class="text-brand-gold font-serif text-lg">Q.</span> 宗教や宗派が違っていても本当に契約できますか？
+                        <span class="font-bold text-sm md:text-base text-autumn-chestnut flex items-center gap-2">
+                            <span class="text-autumn-amber font-serif text-lg">Q.</span> 宗教や宗派が違っていても本当に契約できますか？
                         </span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-300"></i>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-autumn-chestnut/50 transition-transform duration-300"></i>
                     </button>
-                    <div class="hidden border-t border-stone-100 bg-stone-50/50 p-6">
-                        <p class="text-sm text-stone-600 leading-relaxed">
-                            はい、お申込みいただけます。過去の宗旨・宗派、あるいはお住まいの国籍は一切関係ございません。どのような背景の方であっても、皆さま同じように永代供養させていただきますのでご安心ください。
+                    <div class="hidden border-t border-autumn-sand/60 bg-white/70 p-6">
+                        <p class="text-sm text-autumn-chestnut/80 leading-relaxed">
+                            はい、お申込みいただけます。過去の宗旨・宗派、あるいはお住まいの国籍は一切関係ございません。どのような背景の方でも、皆さま同じように永代供養させていただきますのでご安心ください。
                         </p>
                     </div>
                 </div>
 
                 <!-- Q2 -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+                <div class="bg-autumn-cream-card rounded-2xl border border-autumn-sand overflow-hidden shadow-sm">
                     <button class="w-full text-left p-6 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
-                        <span class="font-bold text-sm md:text-base text-brand-dark flex items-center gap-2">
-                            <span class="text-brand-gold font-serif text-lg">Q.</span> 購入後に本当に寄付金や年間管理費用はかかりませんか？
+                        <span class="font-bold text-sm md:text-base text-autumn-chestnut flex items-center gap-2">
+                            <span class="text-autumn-amber font-serif text-lg">Q.</span> 購入後に本当に寄付金や年間管理費用はかかりませんか？
                         </span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-300"></i>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-autumn-chestnut/50 transition-transform duration-300"></i>
                     </button>
-                    <div class="hidden border-t border-stone-100 bg-stone-50/50 p-6">
-                        <p class="text-sm text-stone-600 leading-relaxed">
+                    <div class="hidden border-t border-autumn-sand/60 bg-white/70 p-6">
+                        <p class="text-sm text-autumn-chestnut/80 leading-relaxed">
                             はい、一切かかりません。お申込み時にお支払いいただく総額費用（および納骨の際の実費彫刻・埋葬手続き手数料等）のみで、以後の管理費用は永久無料となります。
                         </p>
                     </div>
                 </div>
 
                 <!-- Q3 -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+                <div class="bg-autumn-cream-card rounded-2xl border border-autumn-sand overflow-hidden shadow-sm">
                     <button class="w-full text-left p-6 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
-                        <span class="font-bold text-sm md:text-base text-brand-dark flex items-center gap-2">
-                            <span class="text-brand-gold font-serif text-lg">Q.</span> 戸籍上の制限はありますか？友人や事実婚でも大丈夫ですか？
+                        <span class="font-bold text-sm md:text-base text-autumn-chestnut flex items-center gap-2">
+                            <span class="text-autumn-amber font-serif text-lg">Q.</span> 戸籍上の制限はありますか？友人や事実婚でも大丈夫ですか？
                         </span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-300"></i>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-autumn-chestnut/50 transition-transform duration-300"></i>
                     </button>
-                    <div class="hidden border-t border-stone-100 bg-stone-50/50 p-6">
-                        <p class="text-sm text-stone-600 leading-relaxed">
+                    <div class="hidden border-t border-autumn-sand/60 bg-white/70 p-6">
+                        <p class="text-sm text-autumn-chestnut/80 leading-relaxed">
                             はい、大丈夫です。当プレート型供養墓は家族制限が一切ありません。親しい友人同士、生涯を共にするパートナー様、様々な理由で入籍されない事実婚のカップル様なども、同じ区画の銘板を分け合い、一緒に眠っていただけます。
                         </p>
                     </div>
                 </div>
 
                 <!-- Q4 -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+                <div class="bg-autumn-cream-card rounded-2xl border border-autumn-sand overflow-hidden shadow-sm">
                     <button class="w-full text-left p-6 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
-                        <span class="font-bold text-sm md:text-base text-brand-dark flex items-center gap-2">
-                            <span class="text-brand-gold font-serif text-lg">Q.</span> なぜ遺骨の「粉骨」をしないのでしょうか？
+                        <span class="font-bold text-sm md:text-base text-autumn-chestnut flex items-center gap-2">
+                            <span class="text-autumn-amber font-serif text-lg">Q.</span> なぜ遺骨の「粉骨」をしないのでしょうか？
                         </span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-300"></i>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-autumn-chestnut/50 transition-transform duration-300"></i>
                     </button>
-                    <div class="hidden border-t border-stone-100 bg-stone-50/50 p-6">
-                        <p class="text-sm text-stone-600 leading-relaxed">
+                    <div class="hidden border-t border-autumn-sand/60 bg-white/70 p-6">
+                        <p class="text-sm text-autumn-chestnut/80 leading-relaxed">
                             粉骨をして小さく、またはパウダー状にすることに対して寂しさや心理的抵抗を感じるご遺族様が多くいらっしゃいます。当霊園では、生前そのままに近い「お骨壺のまま」での安置にこだわり、本来の尊厳を守る供養を行っています。
                         </p>
                     </div>
                 </div>
 
                 <!-- Q5 -->
-                <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+                <div class="bg-autumn-cream-card rounded-2xl border border-autumn-sand overflow-hidden shadow-sm">
                     <button class="w-full text-left p-6 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
-                        <span class="font-bold text-sm md:text-base text-brand-dark flex items-center gap-2">
-                            <span class="text-brand-gold font-serif text-lg">Q.</span> 案内会に行くには必ず見学予約が必要ですか？
+                        <span class="font-bold text-sm md:text-base text-autumn-chestnut flex items-center gap-2">
+                            <span class="text-autumn-amber font-serif text-lg">Q.</span> 案内会に行くには必ず見学予約が必要ですか？
                         </span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-300"></i>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-autumn-chestnut/50 transition-transform duration-300"></i>
                     </button>
-                    <div class="hidden border-t border-stone-100 bg-stone-50/50 p-6">
-                        <p class="text-sm text-stone-600 leading-relaxed">
-                            案内会期間中（8/1～9/4の9:00～17:00）は、現地管理棟のスタッフが常に案内をお受けいたしますので、予約なしでのご来園も可能です。ただし、スムーズにご説明させていただくため、事前にお電話（通話料無料0120-181-577）をいただけましたら、お待たせすることなく優先的にご見学可能です。
+                    <div class="hidden border-t border-autumn-sand/60 bg-white/70 p-6">
+                        <p class="text-sm text-autumn-chestnut/80 leading-relaxed">
+                            案内会期間中（9/5～9/20、10/10～10/25の9:30～16:00）は、現地管理棟のスタッフおよび販売担当が案内をお受けいたしますので、予約なしでのご来園も可能です。ただし、スムーズにご説明させていただくため、事前にお電話（フリーダイヤル：0120-148-114）またはWebフォームよりご連絡をいただけますと優先的にご案内いたします。
                         </p>
                     </div>
                 </div>
@@ -618,113 +649,188 @@
         </div>
     </section>
 
-    <!-- 事前確認・情報共有セクション (天気予報 & LINE/SMSシェア) -->
-    <section class="py-12 bg-white border-y border-stone-200">
-        <div class="max-w-5xl mx-auto px-4">
-            <div class="bg-stone-50 rounded-3xl p-6 sm:p-8 border border-stone-200/80 shadow-sm flex flex-col md:flex-row items-center justify-between gap-8">
-                
-                <!-- 天気予報ボタンエリア -->
-                <div class="w-full md:w-1/2 text-center md:text-left">
-                    <span class="text-brand-gold font-bold tracking-widest text-[10px] uppercase block mb-1">WEATHER FORECAST</span>
-                    <h4 class="text-base sm:text-lg font-bold text-brand-dark mb-2">ご来園・ご見学前の天気チェック</h4>
-                    <p class="text-xs text-stone-500 mb-5 leading-relaxed">埼玉霊園のある「埼玉県北葛飾郡杉戸町」の最新ピンポイント天気予報をご確認いただけます。</p>
-                    <a href="https://weathernews.jp/onebox/tenki/saitama/11464/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-sky-600 hover:bg-sky-700 text-white font-bold px-6 py-3.5 rounded-full text-xs sm:text-sm transition-all shadow-md hover-lift w-full sm:w-auto">
-                        <i data-lucide="cloud-sun" class="w-4 h-4"></i>
-                        <span>杉戸町の天気予報を見る (ウェザーニュース)</span>
-                        <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-80"></i>
-                    </a>
-                </div>
+    <!-- 【新規追加】Webお問い合わせ・ご見学予約・資料請求メールフォーム -->
+    <section id="contact" class="py-20 bg-autumn-cream border-t border-autumn-sand">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-autumn-amber font-bold tracking-widest text-xs uppercase block mb-2">WEB FORM</span>
+                <h3 class="text-2xl sm:text-4xl font-extrabold tracking-wider text-autumn-chestnut text-serif-jp">Webお問い合わせ・現地見学予約・資料請求</h3>
+                <p class="text-autumn-chestnut/70 text-xs sm:text-sm mt-3">24時間受付中。お気軽にお問い合わせください。</p>
+                <div class="w-16 h-1 bg-gradient-to-r from-autumn-amber to-autumn-ginkgo mx-auto mt-4 rounded-full"></div>
+            </div>
 
-                <!-- 区分線 -->
-                <div class="hidden md:block w-px h-28 bg-stone-200"></div>
-                <div class="w-full md:hidden border-t border-stone-200 my-1"></div>
-
-                <!-- LINE / SMS 情報共有エリア -->
-                <div class="w-full md:w-1/2 text-center md:text-left">
-                    <span class="text-brand-gold font-bold tracking-widest text-[10px] uppercase block mb-1">SHARE WITH FAMILY & FRIENDS</span>
-                    <h4 class="text-base sm:text-lg font-bold text-brand-dark mb-2">ご家族・ご友人に情報共有する</h4>
-                    <p class="text-xs text-stone-500 mb-5 leading-relaxed">このページの情報をご家族やご相談される方へLINEまたはSMSで簡単に送信いただけます。</p>
-                    <div class="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
-                        <!-- LINE共有ボタン -->
-                        <a href="https://line.me/R/msg/text/?埼玉霊園%20新プレート型永代供養墓・安堵%0Ahttps://saitama-reien.jp" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-[#06C755] hover:bg-[#05b34c] text-white font-bold px-5 py-3.5 rounded-full text-xs sm:text-sm transition-all shadow-md hover-lift flex-1">
-                            <i data-lucide="message-circle" class="w-4 h-4"></i>
-                            <span>LINEで送る</span>
-                        </a>
-                        <!-- SMS共有ボタン -->
-                        <a href="sms:?body=埼玉霊園%20新プレート型永代供養墓・安堵%0Ahttps://saitama-reien.jp" class="inline-flex items-center justify-center gap-2 bg-stone-700 hover:bg-stone-800 text-white font-bold px-5 py-3.5 rounded-full text-xs sm:text-sm transition-all shadow-md hover-lift flex-1">
-                            <i data-lucide="smartphone" class="w-4 h-4"></i>
-                            <span>SMSで共有</span>
-                        </a>
+            <div class="bg-white p-8 sm:p-12 rounded-3xl border border-autumn-sand shadow-xl relative">
+                <!-- 送信完了メッセージエリア (初期非表示) -->
+                <div id="formSuccessMessage" class="hidden text-center py-12">
+                    <div class="w-16 h-16 rounded-full bg-autumn-amber/20 text-autumn-amber flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="check-circle-2" class="w-10 h-10"></i>
                     </div>
+                    <h4 class="text-2xl font-bold text-autumn-chestnut mb-2">お問い合わせを受け付けました</h4>
+                    <p class="text-sm text-autumn-chestnut/80 leading-relaxed max-w-md mx-auto">
+                        送信ありがとうございます。株式会社宮口石材商店の担当者より、折り返しご連絡・資料の送付をさせていただきます。
+                    </p>
+                    <button type="button" onclick="resetContactForm()" class="mt-8 bg-autumn-sand text-autumn-chestnut font-bold px-6 py-2.5 rounded-full text-xs hover:bg-autumn-amber hover:text-white transition">
+                        別の内容を送信する
+                    </button>
                 </div>
 
+                <!-- 問い合わせフォーム本文 -->
+                <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- お名前 -->
+                        <div>
+                            <label class="block text-xs font-bold text-autumn-chestnut mb-2">
+                                お名前 <span class="bg-autumn-amber text-white text-[10px] px-2 py-0.5 rounded ml-1">必須</span>
+                            </label>
+                            <input type="text" required placeholder="例）山田 太郎" class="w-full bg-autumn-cream/50 border border-autumn-sand rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-autumn-amber focus:ring-1 focus:ring-autumn-amber transition">
+                        </div>
+
+                        <!-- フリガナ -->
+                        <div>
+                            <label class="block text-xs font-bold text-autumn-chestnut mb-2">
+                                フリガナ <span class="bg-autumn-amber text-white text-[10px] px-2 py-0.5 rounded ml-1">必須</span>
+                            </label>
+                            <input type="text" required placeholder="例）ヤマダ タロウ" class="w-full bg-autumn-cream/50 border border-autumn-sand rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-autumn-amber focus:ring-1 focus:ring-autumn-amber transition">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- 電話番号 -->
+                        <div>
+                            <label class="block text-xs font-bold text-autumn-chestnut mb-2">
+                                電話番号 <span class="bg-autumn-amber text-white text-[10px] px-2 py-0.5 rounded ml-1">必須</span>
+                            </label>
+                            <input type="tel" required placeholder="例）090-0000-0000" class="w-full bg-autumn-cream/50 border border-autumn-sand rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-autumn-amber focus:ring-1 focus:ring-autumn-amber transition">
+                        </div>
+
+                        <!-- メールアドレス -->
+                        <div>
+                            <label class="block text-xs font-bold text-autumn-chestnut mb-2">
+                                メールアドレス <span class="bg-autumn-amber text-white text-[10px] px-2 py-0.5 rounded ml-1">必須</span>
+                            </label>
+                            <input type="email" required placeholder="例）example@miyaguchi.net" class="w-full bg-autumn-cream/50 border border-autumn-sand rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-autumn-amber focus:ring-1 focus:ring-autumn-amber transition">
+                        </div>
+                    </div>
+
+                    <!-- お問い合わせ種別 -->
+                    <div>
+                        <label class="block text-xs font-bold text-autumn-chestnut mb-2">
+                            お問い合わせ内容・ご希望 <span class="bg-autumn-amber text-white text-[10px] px-2 py-0.5 rounded ml-1">必須</span>
+                        </label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                            <label class="flex items-center gap-2 p-3 bg-autumn-cream/40 border border-autumn-sand rounded-xl cursor-pointer hover:bg-autumn-cream">
+                                <input type="checkbox" checked class="accent-autumn-amber"> 資料請求
+                            </label>
+                            <label class="flex items-center gap-2 p-3 bg-autumn-cream/40 border border-autumn-sand rounded-xl cursor-pointer hover:bg-autumn-cream">
+                                <input type="checkbox" class="accent-autumn-amber"> 現地見学予約
+                            </label>
+                            <label class="flex items-center gap-2 p-3 bg-autumn-cream/40 border border-autumn-sand rounded-xl cursor-pointer hover:bg-autumn-cream">
+                                <input type="checkbox" class="accent-autumn-amber"> 空き状況確認
+                            </label>
+                            <label class="flex items-center gap-2 p-3 bg-autumn-cream/40 border border-autumn-sand rounded-xl cursor-pointer hover:bg-autumn-cream">
+                                <input type="checkbox" class="accent-autumn-amber"> 墓じまい・改葬
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- ご検討中のプラン -->
+                    <div>
+                        <label class="block text-xs font-bold text-autumn-chestnut mb-2">
+                            ご検討中のプラン
+                        </label>
+                        <select class="w-full bg-autumn-cream/50 border border-autumn-sand rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-autumn-amber focus:ring-1 focus:ring-autumn-amber transition text-autumn-chestnut">
+                            <option value="">選択してください</option>
+                            <option value="2人用">個人墓 2人用 (70万円)</option>
+                            <option value="4人用">家族墓 4人用 (98万円)</option>
+                            <option value="未定・相談したい">未定・相談したい</option>
+                        </select>
+                    </div>
+
+                    <!-- メッセージ -->
+                    <div>
+                        <label class="block text-xs font-bold text-autumn-chestnut mb-2">
+                            ご質問・ご要望・ご見学希望日時など
+                        </label>
+                        <textarea rows="4" placeholder="ご不明な点や見学ご希望日時などをご自由にご記入ください。" class="w-full bg-autumn-cream/50 border border-autumn-sand rounded-xl p-4 text-sm focus:outline-none focus:border-autumn-amber focus:ring-1 focus:ring-autumn-amber transition"></textarea>
+                    </div>
+
+                    <!-- 送信ボタン -->
+                    <div class="text-center pt-4">
+                        <button type="submit" class="w-full sm:w-auto bg-gradient-to-r from-autumn-amber to-autumn-maple hover:from-autumn-maple hover:to-autumn-chestnut text-white font-black px-12 py-4 rounded-full text-base transition-all shadow-lg hover-lift flex items-center justify-center gap-2 mx-auto">
+                            <i data-lucide="send" class="w-5 h-5"></i> 上記の内容で送信する
+                        </button>
+                        <p class="text-[11px] text-autumn-chestnut/60 mt-3">
+                            ※入力された個人情報は、お問い合わせ・資料送付の目的にのみ使用いたします。
+                        </p>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- アクセス & 基本情報 (Access & Map) -->
-    <section id="access" class="py-20 bg-stone-100">
+    <section id="access" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
-                <span class="text-brand-gold font-bold tracking-widest text-xs uppercase block mb-2">ACCESS</span>
-                <h3 class="text-2xl md:text-4xl font-bold tracking-wider text-brand-dark text-serif-jp">アクセス・埼玉霊園 概要</h3>
-                <div class="w-12 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+                <span class="text-autumn-amber font-bold tracking-widest text-xs uppercase block mb-2">ACCESS</span>
+                <h3 class="text-2xl md:text-4xl font-bold tracking-wider text-autumn-chestnut text-serif-jp">アクセス・埼玉霊園 概要</h3>
+                <div class="w-16 h-1 bg-gradient-to-r from-autumn-amber to-autumn-ginkgo mx-auto mt-4 rounded-full"></div>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
                 <!-- 左側：霊園概要 & アクセス説明 -->
-                <div class="lg:col-span-5 bg-white p-8 sm:p-10 rounded-3xl border border-stone-200 shadow-md flex flex-col justify-between">
+                <div class="lg:col-span-5 bg-autumn-cream-card p-8 sm:p-10 rounded-3xl border border-autumn-sand shadow-md flex flex-col justify-between">
                     <div>
-                        <h4 class="text-xl font-bold text-brand-dark mb-6 pb-4 border-b border-stone-100">埼玉霊園・新埼玉霊園 概要</h4>
+                        <h4 class="text-xl font-bold text-autumn-chestnut mb-6 pb-4 border-b border-autumn-sand">埼玉霊園・新埼玉霊園 概要</h4>
                         
                         <div class="space-y-5 text-sm">
                             <div class="flex items-start gap-3">
-                                <i data-lucide="map-pin" class="w-5 h-5 text-brand-gold shrink-0 mt-0.5"></i>
+                                <i data-lucide="map-pin" class="w-5 h-5 text-autumn-amber shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-bold text-brand-dark block">所在地（住所）</span>
-                                    <span class="text-stone-600 block mt-1">〒345-0014<br>埼玉県北葛飾郡杉戸町大字本郷1775-1</span>
+                                    <span class="font-bold text-autumn-chestnut block">所在地（住所）</span>
+                                    <span class="text-autumn-chestnut/70 block mt-1">〒345-0014<br>埼玉県北葛飾郡杉戸町大字本郷1775-1</span>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-3">
-                                <i data-lucide="train" class="w-5 h-5 text-brand-gold shrink-0 mt-0.5"></i>
+                                <i data-lucide="train" class="w-5 h-5 text-autumn-amber shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-bold text-brand-dark block">最寄駅からのアクセス</span>
-                                    <span class="text-stone-600 block mt-1">東武伊勢崎線（東武スカイツリーライン）「北春日部駅」より徒歩約15分</span>
+                                    <span class="font-bold text-autumn-chestnut block">最寄駅からのアクセス</span>
+                                    <span class="text-autumn-chestnut/70 block mt-1">東武伊勢崎線（東武スカイツリーライン）「北春日部駅」より徒歩約15分</span>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-3">
-                                <i data-lucide="clock" class="w-5 h-5 text-brand-gold shrink-0 mt-0.5"></i>
+                                <i data-lucide="clock" class="w-5 h-5 text-autumn-amber shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-bold text-brand-dark block">現地案内時間</span>
-                                    <span class="text-stone-600 block mt-1">9：00～17：00（年中無休・雨天実施）</span>
+                                    <span class="font-bold text-autumn-chestnut block">現地案内時間</span>
+                                    <span class="text-autumn-chestnut/70 block mt-1">9：00～17：00（年中無休・雨天実施）</span>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-3">
-                                <i data-lucide="info" class="w-5 h-5 text-brand-gold shrink-0 mt-0.5"></i>
+                                <i data-lucide="info" class="w-5 h-5 text-autumn-amber shrink-0 mt-0.5"></i>
                                 <div>
-                                    <span class="font-bold text-brand-dark block">申込資格</span>
-                                    <span class="text-stone-600 block mt-1">宗教・宗旨を問わず、どなたでもお申込みいただけます。</span>
+                                    <span class="font-bold text-autumn-chestnut block">申込資格</span>
+                                    <span class="text-autumn-chestnut/70 block mt-1">宗教・宗旨を問わず、どなたでもお申込みいただけます。</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="mt-8 pt-6 border-t border-stone-100">
-                        <p class="text-xs text-stone-500 mb-4 font-medium">
+                    <div class="mt-8 pt-6 border-t border-autumn-sand">
+                        <p class="text-xs text-autumn-chestnut/70 mb-4 font-medium">
                             ※敷地内には大型の無料駐車場を完備しております。お車でのご来園も非常に便利です。
                         </p>
                         <!-- ルート案内（指定のマップリンク） -->
-                        <a href="https://maps.app.goo.gl/2sZ1wfGmChB5t87E9" target="_blank" rel="noopener noreferrer" class="w-full bg-brand-gold hover:bg-brand-gold-dark text-stone-950 font-black py-4 px-6 rounded-full inline-flex items-center justify-center gap-2 transition text-sm shadow-md hover-lift">
+                        <a href="https://maps.app.goo.gl/2sZ1wfGmChB5t87E9" target="_blank" rel="noopener noreferrer" class="w-full bg-autumn-amber hover:bg-autumn-maple text-white font-bold py-4 px-6 rounded-full inline-flex items-center justify-center gap-2 transition text-sm shadow-md hover-lift">
                             <i data-lucide="navigation" class="w-4 h-4"></i> Googleマップでルート案内を開く
                         </a>
                     </div>
                 </div>
 
                 <!-- 右側：Googleマップ埋め込み（指定のコード） -->
-                <div class="lg:col-span-7 bg-white p-3 rounded-3xl border border-stone-200 shadow-md overflow-hidden h-[380px] lg:h-auto min-h-[380px] relative">
+                <div class="lg:col-span-7 bg-white p-3 rounded-3xl border border-autumn-sand shadow-md overflow-hidden h-[380px] lg:h-auto min-h-[380px] relative">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d898.3477534538409!2d139.7446215167897!3d36.00203040569633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018b90f29b45cd9%3A0xc9d912b2d58fdc71!2z5paw5Z-8546J6ZyK5ZyS44O75Z-8546J6ZyK5ZyS!5e1!3m2!1sja!2sjp!4v1783906392084!5m2!1sja!2sjp" 
                         class="absolute inset-0 w-full h-full border-0 rounded-3xl p-1" 
@@ -737,72 +843,101 @@
         </div>
     </section>
 
-    <!-- お問い合わせ先電話番号 -->
-    <section class="py-16 bg-brand-green text-white relative overflow-hidden">
+    <!-- お問い合わせ先電話番号（株式会社宮口石材商店） -->
+    <section class="py-16 bg-gradient-to-br from-autumn-chestnut via-autumn-chestnut-light to-autumn-chestnut text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block mb-2">TELEPHONE</span>
-            <h3 class="text-2xl md:text-3xl font-extrabold mb-6 text-serif-jp">期間中は係員が現地案内所に待機しております</h3>
+            <span class="text-autumn-ginkgo-light text-xs font-bold tracking-widest uppercase block mb-2">OFFICIAL DEALER</span>
+            <h3 class="text-2xl md:text-3xl font-extrabold mb-2 text-serif-jp">株式会社宮口石材商店</h3>
+            <p class="text-xs text-amber-100/80 mb-6">埼玉霊園 新プレート型永代供養墓 指定取扱店</p>
             
             <p class="text-stone-200 text-sm md:text-base max-w-xl mx-auto mb-8 font-light">
-                プランの空き状況確認、現地案内、墓じまいのご不安など、何でも丁寧にお答えします。
+                プランの空き状況確認、現地案内、墓じまいのご不安など、専門スタッフが何でも丁寧にお答えします。
             </p>
 
-            <div class="bg-stone-900/40 border border-white/10 rounded-2xl p-6 md:p-8 max-w-xl mx-auto mb-6">
-                <span class="text-xs text-stone-300 font-semibold block mb-2">【市の家石材店】</span>
-                <a href="tel:0120-181-577" class="text-3xl md:text-5xl font-black text-brand-gold tracking-wider hover:opacity-80 transition block mb-2">
-                    通話料無料0120-181-577
-                </a>
-                <p class="text-xs text-stone-300">受付時間：9：00～17：00（電話対応：火曜日定休）</p>
+            <div class="bg-black/30 border border-white/15 rounded-3xl p-6 md:p-8 max-w-2xl mx-auto mb-8 shadow-2xl backdrop-blur-sm">
+                <span class="text-xs text-autumn-ginkgo-light font-bold block mb-2 tracking-widest">【お電話でのお問い合わせ・ご予約】</span>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 my-3">
+                    <div>
+                        <span class="text-[10px] text-stone-300 block">通話料無料フリーダイヤル</span>
+                        <a href="tel:0120148114" class="text-3xl md:text-5xl font-black text-autumn-ginkgo-light tracking-wider hover:opacity-80 transition block">
+                            0120-148-114
+                        </a>
+                    </div>
+                    <div class="hidden sm:block text-stone-500 text-2xl font-light">|</div>
+                    <div>
+                        <span class="text-[10px] text-stone-300 block">直通電話 TEL</span>
+                        <a href="tel:0473872642" class="text-2xl md:text-3xl font-extrabold text-white tracking-wider hover:opacity-80 transition block">
+                            047-387-2642
+                        </a>
+                    </div>
+                </div>
+
+                <p class="text-xs text-stone-300 mt-3">受付時間：9：00～17：00（年中無休・雨天案内実施中）</p>
+                
+                <div class="mt-6 pt-5 border-t border-white/10 text-xs text-stone-300 space-y-1.5 text-left max-w-md mx-auto">
+                    <p class="flex items-start gap-1.5"><i data-lucide="building-2" class="w-4 h-4 text-autumn-amber shrink-0 mt-0.5"></i> <span><strong>本店：</strong> 千葉県松戸市河原塚400-8 都立八柱霊園正門前</span></p>
+                    <p class="flex items-center gap-1.5"><i data-lucide="globe" class="w-4 h-4 text-autumn-amber shrink-0"></i> <span><strong>公式ホームページ：</strong> <a href="https://www.miyaguchi.net/" target="_blank" rel="noopener noreferrer" class="underline hover:text-autumn-ginkgo-light">https://www.miyaguchi.net/</a></span></p>
+                </div>
             </div>
             
             <p class="text-xs text-stone-400">
-                ※「プレート型永代供養墓の案内ページを見た」とお伝えいただけるとスムーズにご案内できます。
+                ※「埼玉霊園 プレート型永代供養墓の案内ページを見た」とお伝えいただけるとスムーズにご案内できます。
             </p>
         </div>
     </section>
 
     <!-- フッター -->
-    <footer class="bg-stone-950 text-stone-500 text-xs py-12 border-t border-stone-900 pb-28 md:pb-12">
+    <footer class="bg-autumn-chestnut/95 text-stone-400 text-xs py-12 border-t border-autumn-chestnut-light pb-28 md:pb-12">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-center md:text-left">
-                <h4 class="text-stone-300 text-sm font-bold tracking-widest mb-1">有限会社市の家石材店</h4>
-                <p class="text-[11px]">〒270-2254 千葉県松戸市河原塚355-3</p>
-                <p class="text-[10px] text-stone-600 mt-2">　</p>
+                <h4 class="text-stone-200 text-sm font-bold tracking-widest mb-1">埼玉霊園・新埼玉霊園</h4>
+                <p class="text-[11px] text-stone-400">〒345-0014 埼玉県北葛飾郡杉戸町大字本郷1775-1</p>
+                <p class="text-[10px] text-stone-400 mt-1">管理・運営主体：宗教法人 馬頭院</p>
+                <p class="text-[10px] text-autumn-ginkgo-light mt-1 font-semibold">取扱店：株式会社宮口石材商店（フリーダイヤル 0120-148-114）</p>
             </div>
-            <div class="flex gap-4 text-[11px]">
-                <a href="#features" class="hover:text-stone-300 transition">特長</a>
-                <span class="text-stone-800">|</span>
-                <a href="#plans" class="hover:text-stone-300 transition">料金・プラン</a>
-                <span class="text-stone-800">|</span>
-                <a href="#about" class="hover:text-stone-300 transition">管理体制について</a>
-                <span class="text-stone-800">|</span>
-                <a href="#access" class="hover:text-stone-300 transition">アクセス</a>
+            <div class="flex flex-wrap justify-center gap-4 text-[11px]">
+                <a href="#features" class="hover:text-white transition">特長</a>
+                <span class="text-stone-700">|</span>
+                <a href="#plans" class="hover:text-white transition">料金・プラン</a>
+                <span class="text-stone-700">|</span>
+                <a href="#about" class="hover:text-white transition">管理体制について</a>
+                <span class="text-stone-700">|</span>
+                <a href="#contact" class="hover:text-white transition">Webお問い合わせ</a>
+                <span class="text-stone-700">|</span>
+                <a href="#access" class="hover:text-white transition">アクセス</a>
             </div>
             <div class="text-center md:text-right">
-                <p class="text-[10px] text-stone-700">&copy; 有限会社市の家石材店 All Rights Reserved.</p>
+                <p class="text-[10px] text-stone-500">&copy; 埼玉霊園 新プレート型永代供養墓 All Rights Reserved.</p>
+                <p class="text-[10px] text-stone-500 mt-1">株式会社宮口石材商店</p>
             </div>
         </div>
     </footer>
 
     <!-- スマートフォン用 追従型コンバージョンバー（下部固定） -->
-    <div class="fixed bottom-0 left-0 right-0 z-50 bg-stone-950/95 backdrop-blur-md border-t border-stone-800 py-3 px-4 shadow-2xl flex md:hidden gap-3 justify-center items-center">
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-autumn-chestnut/95 backdrop-blur-md border-t border-white/10 py-2.5 px-3 shadow-2xl flex md:hidden gap-2 justify-center items-center">
         <!-- ルート案内（Googleマップ） -->
-        <a href="https://maps.app.goo.gl/2sZ1wfGmChB5t87E9" target="_blank" rel="noopener noreferrer" class="flex-1 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold py-3 px-1 rounded-xl text-xs flex flex-col justify-center items-center gap-1 transition">
-            <i data-lucide="navigation" class="w-4 h-4 text-brand-gold"></i>
-            <span>ルート案内</span>
+        <a href="https://maps.app.goo.gl/2sZ1wfGmChB5t87E9" target="_blank" rel="noopener noreferrer" class="flex-1 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold py-2.5 px-1 rounded-xl text-xs flex flex-col justify-center items-center gap-0.5 transition">
+            <i data-lucide="navigation" class="w-4 h-4 text-autumn-ginkgo-light"></i>
+            <span class="text-[10px]">マップ</span>
         </a>
-        <!-- 電話で相談 -->
-        <a href="tel:0120-181-577" class="flex-[2] bg-brand-gold hover:bg-brand-gold-dark text-stone-950 font-black py-3 px-4 rounded-xl text-xs flex justify-center items-center gap-2 transition shadow-lg">
-            <i data-lucide="phone-call" class="w-4 h-4 text-stone-950"></i>
+        <!-- Web問い合わせ -->
+        <a href="#contact" class="flex-1 bg-autumn-sand/20 hover:bg-autumn-sand/30 border border-white/20 text-white font-bold py-2.5 px-1 rounded-xl text-xs flex flex-col justify-center items-center gap-0.5 transition">
+            <i data-lucide="mail" class="w-4 h-4 text-autumn-ginkgo-light"></i>
+            <span class="text-[10px]">Web予約</span>
+        </a>
+        <!-- 電話で相談（宮口石材商店 フリーダイヤル） -->
+        <a href="tel:0120148114" class="flex-[2] bg-gradient-to-r from-autumn-amber to-autumn-maple text-white font-black py-2.5 px-3 rounded-xl text-xs flex justify-center items-center gap-1.5 transition shadow-lg">
+            <i data-lucide="phone-call" class="w-4 h-4 text-white"></i>
             <div class="text-left">
-                <span class="text-[8px] block font-medium leading-none text-stone-800">見学・ご質問・空き状況</span>
-                <span class="text-xs sm:text-sm tracking-wider font-extrabold text-stone-950">通話料無料0120-181-577</span>
+                <span class="text-[8px] block font-medium leading-none text-amber-100">宮口石材 フリーダイヤル</span>
+                <span class="text-xs tracking-wider font-extrabold">0120-148-114</span>
             </div>
         </a>
     </div>
 
-    <!-- Lucideアイコン変換用の初期化スクリプト -->
+    <!-- Lucideアイコン変換 & スクリプト -->
     <script>
         lucide.createIcons();
 
@@ -818,6 +953,20 @@
                 answerDiv.classList.add('hidden');
                 icon.style.transform = 'rotate(0deg)';
             }
+        }
+
+        // Web問い合わせフォーム送信ハンドラー
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            document.getElementById('contactForm').classList.add('hidden');
+            document.getElementById('formSuccessMessage').classList.remove('hidden');
+        }
+
+        // フォームリセット
+        function resetContactForm() {
+            document.getElementById('contactForm').reset();
+            document.getElementById('contactForm').classList.remove('hidden');
+            document.getElementById('formSuccessMessage').classList.add('hidden');
         }
     </script>
 </body>
